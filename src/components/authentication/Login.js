@@ -26,7 +26,7 @@ export default function Login() {
             await login(credentials.email, credentials.password)
             history.push('/')
         } catch {
-            setError(`Failed to log in. ${<Link to="/signup">Sign Up</Link>}?`)
+            setError('Failed to log in.')
             setLoading(false)
         }
     }
@@ -35,7 +35,10 @@ export default function Login() {
         <div className="App">
             <Container maxWidth="sm" style={{ paddingTop: '5rem' }}>
                 <h2>Log In</h2>
-                {error && <Alert severity="error">{error}</Alert>}
+                {error && <Alert severity="error">
+                    Failed to log in.<> </>
+                    {<Link to="/signup" style={{ textDecoration: "underline" }}>Sign Up</Link>}?
+                    </Alert>}
                 <form className="credentials-form" onSubmit={handleSubmit}>
                     <TextField
                         required
