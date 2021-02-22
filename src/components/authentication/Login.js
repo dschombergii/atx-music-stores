@@ -26,7 +26,7 @@ export default function Login() {
             await login(credentials.email, credentials.password)
             history.push('/')
         } catch {
-            setError('Failed to log in')
+            setError(`Failed to log in. ${<Link to="/signup">Sign Up</Link>}?`)
             setLoading(false)
         }
     }
