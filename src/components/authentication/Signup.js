@@ -31,7 +31,7 @@ export default function Signup() {
             setLoading(true)
             await signup(credentials.email, credentials.password, credentials.username)
                 .then(() => updateProfile(credentials.username))
-            history.push('/user')
+            history.push('/')
         } catch {
             setError('Failed to create an account')
             setLoading(false)
