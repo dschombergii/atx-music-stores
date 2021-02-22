@@ -1,0 +1,105 @@
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.credentials-form {
+	display: flex;
+	flex-direction: column;
+	margin: 1.5rem auto;
+	width: 80%;
+}
+
+.logged-as-bar {
+	background: #d3d3d3;
+	color: #777;
+	padding: 0.3em 0 0.3em 2em;
+}
+
+.add-form {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	width: 48%;
+}
+
+.login-button {
+	margin-top: 25px !important;
+	background-color: #e0e0e0;
+}
+
+.add-button {
+	margin-top: 1em !important;
+	width: 50%;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 20vw;
+	margin: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding-inline-start: 20px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.add-car {
+	background: #4caf50 !important;
+	color: white !important;
+}
+
+.icon {
+	font-size: medium !important;
+}
+
+.icon:hover {
+	cursor: pointer;
+}
+
+.text-gray {
+	color: gray;
+}
+
+.text-red {
+	color: red;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list-item {
+	margin: auto 20px;
+	color: white;
+}
+
+.car-container {
+	margin: 50px;
+}
+
+.car-paper {
+	padding: 50px;
+}
