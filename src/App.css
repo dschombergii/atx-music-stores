@@ -35,39 +35,13 @@ h2 {
 }
 
 .add-button {
-	margin-top: 1em !important;
+	margin-top: 2rem !important;
 	width: 50%;
-}
-
-.card-container {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.card {
-	width: 20vw;
-	margin: 25px;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
-}
-
-ul {
-	padding-inline-start: 20px;
-}
-
-.flex-container {
-	display: flex;
-	justify-content: space-around;
-	margin: 50px 0;
-}
-
-.add-car {
-	background: #4caf50 !important;
-	color: white !important;
 }
 
 .icon {
@@ -94,12 +68,4 @@ ul {
 .nav-list-item {
 	margin: auto 20px;
 	color: white;
-}
-
-.car-container {
-	margin: 50px;
-}
-
-.car-paper {
-	padding: 50px;
 }

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useParams } from 'react-router-dom'
-// import './Map.css'
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
 import { ListingsContext } from '../../contexts/ListingsContext'

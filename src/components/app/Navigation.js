@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { Link, useHistory } from 'react-router-dom'
-import { useAuth } from '../../contexts/AuthContext'
+
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles';
+
+import { useAuth } from '../../contexts/AuthContext'
 import { theme } from './theme'
 
 function Navigation() {
@@ -27,7 +29,7 @@ function Navigation() {
             <AppBar position="relative">
                 <Toolbar>
                     <Typography variant="h6" style={{ flexGrow: "1", color: "white" }}>
-                        <Link to="/">Austin Small Business</Link>
+                        <Link to="/">Austin Music Stores</Link>
                     </Typography>
                     {currentUser === null ?
                         <ul className="nav-list">

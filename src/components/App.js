@@ -1,7 +1,6 @@
 import React from 'react'
-import '../App.css'
 import { BrowserRouter } from 'react-router-dom'
-import { Provider } from 'react-redux'
+import '../App.css'
 
 import { AuthProvider } from '../contexts/AuthContext'
 import { ListingsProvider } from '../contexts/ListingsContext'

@@ -1,4 +1,7 @@
 import React, { useEffect, useContext } from 'react'
+import { Link } from 'react-router-dom'
+
+import DeleteIcon from '@material-ui/icons/Delete'
 import {
     Container,
     Table,
@@ -7,8 +10,6 @@ import {
     TableHead,
     TableRow
 } from '@material-ui/core'
-import DeleteIcon from '@material-ui/icons/Delete'
-import { Link } from 'react-router-dom'
 
 import { useAuth } from '../../contexts/AuthContext'
 import { ListingsContext } from '../../contexts/ListingsContext'

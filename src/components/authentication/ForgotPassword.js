@@ -1,13 +1,14 @@
-import React, { useRef, useState } from 'react'
-import { useAuth } from '../../contexts/AuthContext'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import Alert from '@material-ui/lab/Alert'
 import {
-    Card,
     TextField,
     Button,
     Container
 } from '@material-ui/core'
+
+import { useAuth } from '../../contexts/AuthContext'
 
 export default function ForgotPassword() {
 

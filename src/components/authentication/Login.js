@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { useAuth } from '../../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
+
 import Alert from '@material-ui/lab/Alert'
 import {
     TextField,
     Button,
     Container
 } from '@material-ui/core'
+
+import { useAuth } from '../../contexts/AuthContext'
 
 export default function Login() {
 
@@ -32,6 +34,7 @@ export default function Login() {
     return (
         <div className="App">
             <Container maxWidth="sm" style={{ paddingTop: '5rem' }}>
+                <h2>Log In</h2>
                 {error && <Alert severity="error">{error}</Alert>}
                 <form className="credentials-form" onSubmit={handleSubmit}>
                     <TextField

@@ -2,9 +2,9 @@ import { useState, useContext, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import { TextField, Button, Container } from '@material-ui/core'
+
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import { OpenStreetMapProvider } from 'leaflet-geosearch';
-
 import { ListingsContext } from '../../contexts/ListingsContext'
 
 export default function AddBusiness() {
@@ -55,7 +55,6 @@ export default function AddBusiness() {
 
 
     return (
-        // <Grid style={{ marginTop: "2em" }} container direction="row">
         <Container minWidth="sm" style={{ display: "flex", flexWrap: "wrap", flexDirection: "row", paddingTop: '5rem' }}>
             <form onSubmit={handleSubmit} className="add-form">
                 <TextField

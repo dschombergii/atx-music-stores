@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
-import { Container, Paper } from '@material-ui/core';
-import Map from './Map'
 import { useParams } from 'react-router-dom'
 
+import { Container } from '@material-ui/core';
+
+import Map from './Map'
 import { ListingsContext } from '../../contexts/ListingsContext'
 
 export default function BusinessDetails(props) {
